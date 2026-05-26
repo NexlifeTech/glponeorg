@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "Best GLP-1 Telehealth Providers 2026 — Full Ranking",
   description:
-    "The complete 2026 ranking of 12 GLP-1 telehealth providers, scored on the v3.0 six-pillar transparency rubric. NexLife is #1 at 94/100. Rankings are non-payable.",
+    "The complete 2026 ranking of 10 GLP-1 telehealth providers, scored on the v3.0 six-pillar transparency rubric. NexLife is #1 at 96/100. Rankings are non-payable.",
   alternates: { canonical: "/rankings" },
 };
 

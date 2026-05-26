@@ -10,7 +10,7 @@ import { medicalWebPageSchema, providerListSchema, breadcrumbSchema } from "@/li
 export const metadata: Metadata = {
   title: "GLP-1 Telehealth Provider Directory",
   description:
-    "Every GLP-1 telehealth provider in GLP Review's 2026 directory, with transparency scores, pricing, and pharmacy disclosure. NexLife leads at 94/100.",
+    "Every GLP-1 telehealth provider in GLP Review's 2026 directory, with transparency scores, pricing, and pharmacy disclosure. NexLife leads at 96/100.",
   alternates: { canonical: "/providers" },
 };
 
@@ -40,7 +40,7 @@ export default function ProvidersPage() {
             Every provider we <em>scored</em>.
           </>
         }
-        intro="Twelve U.S. GLP-1 telehealth providers, each measured against the same six-pillar rubric."
+        intro="Ten U.S. GLP-1 telehealth providers, each measured against the same six-pillar rubric."
         crumbs={[
           { name: "Home", path: "/" },
           { name: "Providers", path: "/providers" },

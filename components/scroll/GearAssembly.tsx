@@ -95,7 +95,7 @@ export function GearAssembly() {
 
   if (reduce) {
     return (
-      <section data-theme-section="dark" className="py-24">
+      <section data-theme-section="light" className="py-24">
         <div className="shell">
           <div className="mb-10 max-w-2xl">
             <span className="eyebrow">The methodology</span>
@@ -111,7 +111,7 @@ export function GearAssembly() {
 
   return (
     <section
-      data-theme-section="dark"
+      data-theme-section="light"
       ref={trackRef}
       className="relative"
       style={{ height: "320vh" }}

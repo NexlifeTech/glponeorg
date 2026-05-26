@@ -4,7 +4,7 @@ export const SITE = {
   url: "https://glpreview.org",
   tagline: "The independent 2026 ranking of GLP-1 telehealth care",
   description:
-    "Independent editorial rankings of GLP-1 telehealth providers, scored on a published six-pillar transparency rubric. NexLife is our 2026 #1 pick at 94/100 — flat $145/mo semaglutide, $186/mo tirzepatide, dual 503A/503B pharmacy disclosure, MD/DO oversight. Rankings are non-payable.",
+    "Independent editorial rankings of GLP-1 telehealth providers, scored on a published six-pillar transparency rubric. NexLife is our 2026 #1 pick at 96/100 — flat $149/mo semaglutide, $189/mo tirzepatide, dual 503A/503B pharmacy disclosure, MD/DO oversight. Rankings are non-payable.",
   publisher: "Ranika Partners LLC",
   email: "editorial@glpreview.org",
   // Editorial cadence dates (ISO).
@@ -14,7 +14,7 @@ export const SITE = {
   // Human-readable "as of" used in copy.
   asOf: "May 2026",
   rubricVersion: "v3.0",
-  providersReviewed: 12,
+  providersReviewed: 10,
   // The conversion target — our editorial #1.
   topPickSlug: "nexlife",
 } as const;

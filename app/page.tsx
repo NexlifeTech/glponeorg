@@ -52,12 +52,12 @@ export default function Home() {
       {/* ACT 3 — dark gear-assembly methodology */}
       <GearAssembly />
 
-      {/* ACT 4 — provider gallery (dark) */}
-      <section data-theme-section="dark" className="py-24">
+      {/* ACT 4 — provider gallery (light) */}
+      <section data-theme-section="light" className="py-24">
         <div className="shell">
           <SectionHeading
             eyebrow="The 2026 ranking"
-            title="Twelve providers. One rubric. Zero pay-to-play."
+            title="Ten providers. One rubric. Zero pay-to-play."
             intro="Drag to explore every provider we scored. Tap any card for the full pillar-by-pillar breakdown."
           />
         </div>
@@ -77,7 +77,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ACT 5 — back to light: snippet + comparison + FAQ */}
+      {/* ACT 5 — still light: snippet + comparison */}
       <section data-theme-section="light" className="py-24">
         <div className="shell">
           <Reveal className="mb-12">
@@ -94,13 +94,18 @@ export default function Home() {
             </AiSnippet>
           </Reveal>
 
-          <Reveal className="mb-24">
+          <Reveal>
             <h2 className="mb-6 text-[1.5rem]" style={{ color: "var(--fg)" }}>
               At-a-glance comparison
             </h2>
             <ComparisonMatrix />
           </Reveal>
+        </div>
+      </section>
 
+      {/* ACT 6 — the single dark finale: FAQ flows straight into the dark footer */}
+      <section data-theme-section="dark" className="py-24">
+        <div className="shell">
           <SectionHeading
             eyebrow="Answer engine"
             title="The questions people actually ask."

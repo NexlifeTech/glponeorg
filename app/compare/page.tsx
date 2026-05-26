@@ -10,7 +10,7 @@ import { medicalWebPageSchema, providerListSchema, breadcrumbSchema } from "@/li
 export const metadata: Metadata = {
   title: "Compare GLP-1 Telehealth Providers — 2026 Matrix",
   description:
-    "Side-by-side comparison of 12 GLP-1 telehealth providers: transparency score, pricing, pharmacy disclosure, clinician model, and state coverage.",
+    "Side-by-side comparison of 10 GLP-1 telehealth providers: transparency score, pricing, pharmacy disclosure, clinician model, and state coverage.",
   alternates: { canonical: "/compare" },
 };
 

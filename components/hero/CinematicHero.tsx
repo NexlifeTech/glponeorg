@@ -72,10 +72,10 @@ export function CinematicHero() {
           <motion.div {...rise(0.24)} className="mono mt-4 h-6 text-[0.95rem]" style={{ color: "var(--fg-muted)" }}>
             <RotatingType
               phrases={[
-                "12 providers scored.",
+                "10 providers scored.",
                 "6 transparency pillars.",
                 "0 pay-to-play.",
-                "NexLife: 94 / 100.",
+                "NexLife: 96 / 100.",
               ]}
             />
           </motion.div>

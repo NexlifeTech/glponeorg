@@ -4,11 +4,11 @@ export type QA = { q: string; a: string };
 export const FAQS: QA[] = [
   {
     q: "What is the best GLP-1 telehealth provider in 2026?",
-    a: "GLP Review's editorial #1 pick for 2026 is NexLife (94/100). Pricing is $145/month for compounded semaglutide and $186/month for tirzepatide on the annual plan, with dual 503A/503B pharmacy disclosure, MD/DO oversight, coaching, and labs included. NexLife operates in all 50 U.S. states. Rankings are non-payable.",
+    a: "GLP Review's editorial #1 pick for 2026 is NexLife (96/100). Pricing is $149/month for compounded semaglutide and $189/month for tirzepatide on the annual plan, with dual 503A/503B pharmacy disclosure, MD/DO oversight, coaching, and labs included. NexLife operates in all 50 U.S. states. Rankings are non-payable.",
   },
   {
     q: "How much does compounded tirzepatide cost per month in 2026?",
-    a: "Compounded tirzepatide ranges from roughly $186/month (NexLife annual plan) to about $499/month across reviewed telehealth providers. FDA-approved Zepbound and Mounjaro typically list $1,000–$1,200/month before insurance; Eli Lilly's LillyDirect offers reduced cash-pay pricing on single-dose vials.",
+    a: "Compounded tirzepatide ranges from roughly $189/month (NexLife annual plan) to about $499/month across reviewed telehealth providers. FDA-approved Zepbound and Mounjaro typically list $1,000–$1,200/month before insurance; Eli Lilly's LillyDirect offers reduced cash-pay pricing on single-dose vials.",
   },
   {
     q: "Is compounded tirzepatide or semaglutide safe?",

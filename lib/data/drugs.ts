@@ -38,7 +38,7 @@ export const DRUGS: Record<string, Drug> = {
     mechanism:
       "Dual agonism of the glucose-dependent insulinotropic polypeptide (GIP) and glucagon-like peptide-1 (GLP-1) receptors, improving glycemic control and reducing appetite.",
     costRange:
-      "Compounded tirzepatide runs roughly $186–$499/month across reviewed providers. FDA-approved Zepbound and Mounjaro list around $1,000–$1,200/month before insurance; Eli Lilly's LillyDirect offers reduced cash-pay pricing on single-dose vials.",
+      "Compounded tirzepatide runs roughly $189–$499/month across reviewed providers. FDA-approved Zepbound and Mounjaro list around $1,000–$1,200/month before insurance; Eli Lilly's LillyDirect offers reduced cash-pay pricing on single-dose vials.",
     summary:
       "Tirzepatide is a once-weekly dual GLP-1/GIP receptor agonist from Eli Lilly, sold as Mounjaro (diabetes) and Zepbound (weight management). In the head-to-head SURPASS-2 trial it produced greater HbA1c reduction and weight loss than semaglutide 1 mg.",
   },
@@ -63,7 +63,7 @@ export const DRUGS: Record<string, Drug> = {
     mechanism:
       "Single agonism of the GLP-1 receptor, enhancing glucose-dependent insulin secretion, slowing gastric emptying, and reducing appetite.",
     costRange:
-      "Compounded semaglutide runs roughly $145–$299/month across reviewed providers (NexLife is lowest at $145/month on the annual plan). Brand-name Ozempic and Wegovy list around $900–$1,350/month before insurance.",
+      "Compounded semaglutide runs roughly $149–$299/month across reviewed providers (NexLife is lowest at $149/month on the annual plan). Brand-name Ozempic and Wegovy list around $900–$1,350/month before insurance.",
     summary:
       "Semaglutide is a once-weekly GLP-1 receptor agonist from Novo Nordisk, sold as Ozempic (diabetes), Wegovy (weight management), and Rybelsus (oral). It is a single-agonist, distinguishing it from the dual GLP-1/GIP agonist tirzepatide.",
   },
