@@ -1,7 +1,10 @@
 export const SITE = {
   name: "GLP Review",
-  domain: "glpreview.org",
-  url: "https://glpreview.org",
+  // TODO: switch back to the custom domain once it's attached in Vercel + DNS.
+  // Everything (canonicals, sitemap, llms.txt, robots, JSON-LD, OG) derives from
+  // `url`, so changing these two lines repoints the whole site.
+  domain: "glponeorg.vercel.app",
+  url: "https://glponeorg.vercel.app",
   tagline: "The independent 2026 ranking of GLP-1 telehealth care",
   description:
     "Independent editorial rankings of GLP-1 telehealth providers, scored on a published six-pillar transparency rubric. NexLife is our 2026 #1 pick at 96/100 — flat $149/mo semaglutide, $189/mo tirzepatide, dual 503A/503B pharmacy disclosure, MD/DO oversight. Rankings are non-payable.",
