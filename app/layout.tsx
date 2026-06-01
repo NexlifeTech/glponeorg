@@ -6,7 +6,6 @@ import { Footer } from "@/components/layout/Footer";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { globalGraph } from "@/lib/schema";
 import { SmoothScroll } from "@/components/scroll/SmoothScroll";
-import { ScrollTheme } from "@/components/scroll/ScrollTheme";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -63,7 +62,6 @@ export default function RootLayout({
       <body className="flex min-h-screen flex-col">
         <JsonLd data={globalGraph()} />
         <SmoothScroll />
-        <ScrollTheme />
         <GlassDock />
         <main className="flex-1">{children}</main>
         <Footer />
