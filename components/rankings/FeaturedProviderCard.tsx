@@ -3,8 +3,17 @@ import { ScoreDial } from "./ScoreDial";
 import { Pill } from "@/components/ui/Pill";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { Glass } from "@/components/ui/Glass";
+import { withUtm } from "@/lib/utm";
 
-export function FeaturedProviderCard({ p }: { p: Provider }) {
+export function FeaturedProviderCard({
+  p,
+  campaign = "featured-card",
+}: {
+  p: Provider;
+  /** Surface where this card is rendered — drives utm_campaign on the outbound. */
+  campaign?: string;
+}) {
+  const outbound = withUtm(p.url, { campaign, content: p.slug });
   return (
     <Glass as="article" className="overflow-hidden rounded-[32px]">
       <div className="grid gap-8 p-7 sm:p-10 lg:grid-cols-[1fr_auto]">
@@ -41,7 +50,7 @@ export function FeaturedProviderCard({ p }: { p: Provider }) {
             <MagneticButton href={`/providers/${p.slug}`}>
               Read the full {p.name} review →
             </MagneticButton>
-            <MagneticButton href={p.url} variant="ghost" external>
+            <MagneticButton href={outbound} variant="ghost" external>
               Visit {p.name}
             </MagneticButton>
           </div>

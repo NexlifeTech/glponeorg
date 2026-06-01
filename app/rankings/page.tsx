@@ -66,7 +66,7 @@ export default function RankingsPage() {
         </Reveal>
 
         <Reveal className="mb-14">
-          <FeaturedProviderCard p={FEATURED} />
+          <FeaturedProviderCard p={FEATURED} campaign="rankings" />
         </Reveal>
 
         <RevealGroup>

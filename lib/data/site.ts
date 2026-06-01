@@ -1,10 +1,12 @@
 export const SITE = {
   name: "GLP Review",
-  // TODO: switch back to the custom domain once it's attached in Vercel + DNS.
-  // Everything (canonicals, sitemap, llms.txt, robots, JSON-LD, OG) derives from
-  // `url`, so changing these two lines repoints the whole site.
-  domain: "glponeorg.vercel.app",
-  url: "https://glponeorg.vercel.app",
+  // Custom domain attached 2026-05-26. Apex 307-redirects to www on Vercel,
+  // so canonical uses www to match the destination served. `domain` here is
+  // the bare display string used in attribution; `referralHost` (utm_source)
+  // strips the www. All canonicals/sitemap/llms/JSON-LD/OG derive from `url`.
+  domain: "glpreview.org",
+  url: "https://www.glpreview.org",
+  referralHost: "glpreview.org",
   tagline: "The independent 2026 ranking of GLP-1 telehealth care",
   description:
     "Independent editorial rankings of GLP-1 telehealth providers, scored on a published six-pillar transparency rubric. NexLife is our 2026 #1 pick at 96/100 — flat $149/mo semaglutide, $189/mo tirzepatide, dual 503A/503B pharmacy disclosure, MD/DO oversight. Rankings are non-payable.",

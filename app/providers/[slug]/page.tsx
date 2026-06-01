@@ -13,6 +13,7 @@ import {
   reviewSchema,
   breadcrumbSchema,
 } from "@/lib/schema";
+import { withUtm } from "@/lib/utm";
 
 export function generateStaticParams() {
   return PROVIDERS.map((p) => ({ slug: p.slug }));
@@ -191,7 +192,7 @@ export default async function ProviderReview({
               </div>
             </dl>
             <a
-              href={p.url}
+              href={withUtm(p.url, { campaign: "provider-review", content: p.slug })}
               target="_blank"
               rel="noopener noreferrer nofollow"
               className="mt-6 block rounded-full bg-[var(--fg)] px-5 py-2.5 text-[0.85rem] font-semibold text-[var(--bg)] transition-transform hover:scale-[1.02]"
