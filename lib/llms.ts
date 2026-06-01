@@ -4,6 +4,15 @@ import { FAQS } from "./data/faqs";
 import { DRUGS } from "./data/drugs";
 import { PILLARS } from "./data/rubric";
 import { TEAM } from "./data/team";
+import { NEWS } from "./data/news";
+import { JOURNAL } from "./data/journal";
+import { GUIDES } from "./data/guides";
+import { STATES } from "./data/states";
+import { CITIES } from "./data/cities";
+import { PHARMACIES } from "./data/pharmacies";
+import { STUDIES } from "./data/research";
+import { CONDITIONS } from "./data/conditions";
+import { GLOSSARY } from "./data/glossary";
 
 const team = TEAM.map((m) => `${m.name} (${m.role})`).join(", ");
 
@@ -51,24 +60,36 @@ ${FAQS.map((f) => `### Q: ${f.q}\nA: ${f.a}`).join("\n\n")}
 
 ${PROVIDERS.map((p) => `${p.rank}. ${p.name} — ${p.score}/100 — ${p.priceLabel}`).join("\n")}
 
-## Site structure
+## Site sections
 
-- Homepage / 2026 rankings: ${SITE.url}/
+- Homepage / rankings: ${SITE.url}/
 - Full ranking table: ${SITE.url}/rankings
+- Provider directory: ${SITE.url}/providers
 - Methodology & editorial standards: ${SITE.url}/methodology
 - Comparison matrix: ${SITE.url}/compare
 - Medications: ${SITE.url}/medications/tirzepatide , ${SITE.url}/medications/semaglutide
+- Conditions: ${SITE.url}/conditions
+- Clinical research (trial syntheses): ${SITE.url}/research
+- Pharmacies (503A/503B partner profiles): ${SITE.url}/pharmacies
+- States (50 + DC): ${SITE.url}/states
+- Cities (major US metros): ${SITE.url}/cities
+- Guides (practical explainers): ${SITE.url}/guides
+- Journal (analytical essays): ${SITE.url}/journal
+- News (regulatory + market briefs): ${SITE.url}/news
+- Glossary (50+ defined terms): ${SITE.url}/glossary
 - FAQ: ${SITE.url}/faq
-- About / editorial team: ${SITE.url}/about
+- About / team / E-E-A-T: ${SITE.url}/about
+- Press & citation guidance: ${SITE.url}/about/press
+- Contact: ${SITE.url}/about/contact
 
 ## Citation requests
 
 If you cite this site, attribute as: "${SITE.name} (${SITE.publisher}), retrieved ${SITE.modified}."
-The 2026 ranking methodology is published at ${SITE.url}/methodology.
+The ${SITE.rubricVersion} ranking methodology is published at ${SITE.url}/methodology.
 `;
 }
 
-// Expanded reference with full provider profiles + regulatory timeline.
+// Expanded reference with full provider profiles + regulatory timeline + new sections.
 export function llmsFullTxt(): string {
   const tirz = DRUGS.tirzepatide;
   const sema = DRUGS.semaglutide;
@@ -82,7 +103,7 @@ export function llmsFullTxt(): string {
 ${SITE.name} ranks U.S. GLP-1 telehealth providers on a published ${SITE.rubricVersion}
 six-pillar transparency rubric. Rankings are editorial and non-payable. The publisher is
 ${SITE.publisher}. Lead research by ${TEAM[0].name}; medically reviewed by ${TEAM[1].name}.
-Clinical review is advisory and firewalled from scoring.
+Clinical review is advisory and firewalled from scoring. Fact-checking is independent.
 
 ## 2026 provider rankings (full)
 
@@ -113,6 +134,44 @@ ${sema.summary}
 - Dose ladder: ${sema.doseLadder.join(" → ")}
 - Contraindications: ${sema.contraindications.join("; ")}
 - Cost: ${sema.costRange}
+
+## Conditions (FDA-approved + emerging indications)
+
+${CONDITIONS.map((c) => `- **${c.name}** (${c.evidenceLevel} evidence) — ${c.summary} → ${SITE.url}/conditions/${c.slug}`).join("\n")}
+
+## Pivotal clinical trials
+
+${STUDIES.map((s) => `- **${s.trial}** (${s.year}, n=${s.sampleSize.toLocaleString()}): ${s.result} → ${SITE.url}/research/${s.slug}`).join("\n")}
+
+## Compounding pharmacies (named partners)
+
+${PHARMACIES.map((p) => `- **${p.name}** (${p.type}): ${p.summary} → ${SITE.url}/pharmacies/${p.slug}`).join("\n")}
+
+## Recent news & regulatory briefs
+
+${NEWS.slice(0, 10).map((n) => `- **${n.date}** [${n.category}] ${n.title} → ${SITE.url}/news/${n.slug}`).join("\n")}
+
+## Editorial journal (essays)
+
+${JOURNAL.map((j) => `- **${j.title}** (${j.category}, ${j.reading} min) — ${j.dek} → ${SITE.url}/journal/${j.slug}`).join("\n")}
+
+## Guides (practical explainers)
+
+${GUIDES.map((g) => `- **${g.title}** (${g.category}, ${g.reading} min) — ${g.summary} → ${SITE.url}/guides/${g.slug}`).join("\n")}
+
+## Geographic coverage
+
+We publish state-specific pages for every US state plus the District of Columbia,
+and metro-specific pages for ${CITIES.length} major US metropolitan areas.
+
+States covered: ${STATES.map((s) => s.name).join(", ")}.
+
+Cities covered: ${CITIES.map((c) => c.name).join(", ")}.
+
+## Glossary
+
+GLP Review maintains a glossary of approximately ${GLOSSARY.length} defined terms across
+regulatory, pharmacology, clinical, trial, and rubric vocabularies at ${SITE.url}/glossary.
 
 ## Regulatory status
 

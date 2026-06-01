@@ -42,4 +42,40 @@ export const FAQS: QA[] = [
     q: "How does GLP Review score providers?",
     a: "GLP Review scores providers on a published v3.0 six-pillar transparency rubric worth 100 points: clinical protocol and named medical director, pharmacy traceability and certificate of analysis, real-world outcomes and adverse-event disclosure, all-inclusive flat pricing, lab integration and follow-up, and regulatory clarity. A 70% per-pillar threshold marks a provider transparency-compliant.",
   },
+  {
+    q: "Does insurance cover GLP-1 medications?",
+    a: "Coverage depends on the indication. GLP-1s prescribed for type 2 diabetes (Ozempic, Mounjaro) are broadly covered with prior authorization. Coverage for chronic weight management (Wegovy, Zepbound, Saxenda) varies dramatically — many commercial plans and most state Medicaid programs exclude weight-loss medications; Medicare does not cover them for weight management alone. Since March 2024, Wegovy's cardiovascular risk reduction indication has improved coverage for the secondary-prevention population.",
+  },
+  {
+    q: "What happens when I stop taking a GLP-1?",
+    a: "Both the STEP-4 (semaglutide) and SURMOUNT-4 (tirzepatide) trials show that withdrawal of therapy leads to substantial weight regain. In STEP-4, roughly two-thirds of weight lost during a 20-week run-in was regained over the following 48 weeks after switching to placebo. The clinical implication is that GLP-1 therapy for obesity is typically long-term, like other chronic-disease medications.",
+  },
+  {
+    q: "How do I switch GLP-1 telehealth providers without disrupting treatment?",
+    a: "Obtain a copy of your medical records from your current program (HIPAA-required, typically free). Time the switch so your new program's first shipment arrives before your current vial runs out. A 1–2 week gap is usually tolerated; gaps over 4 weeks may warrant stepping back one dose level when resuming. Ask the new provider to confirm dose continuity at intake.",
+  },
+  {
+    q: "What's the difference between Wegovy and Ozempic?",
+    a: "Both contain semaglutide as the active ingredient. Ozempic is approved for type 2 diabetes at maintenance doses of 0.5, 1.0, or 2.0 mg weekly. Wegovy is approved for chronic weight management (and, since March 2024, cardiovascular risk reduction) at the higher 2.4 mg weekly maintenance dose. They are different FDA-approved drug products despite sharing the active ingredient.",
+  },
+  {
+    q: "What's the difference between Mounjaro and Zepbound?",
+    a: "Both contain tirzepatide as the active ingredient. Mounjaro is approved for type 2 diabetes. Zepbound is approved for chronic weight management and (since December 2024) for moderate-to-severe obstructive sleep apnea in adults with obesity. They are different FDA-approved drug products with the same molecule.",
+  },
+  {
+    q: "Are there pediatric GLP-1 approvals?",
+    a: "Yes. Wegovy and Zepbound are both FDA-approved for adolescents aged 12+ with BMI ≥ 95th percentile for age. Safety and efficacy in this population were established in dedicated pediatric trials. GLP-1 use in children under 12 is not currently FDA-approved.",
+  },
+  {
+    q: "Can I take a GLP-1 if I'm pregnant or trying to conceive?",
+    a: "No. GLP-1 receptor agonists are contraindicated in pregnancy and breastfeeding. The 2024 ADA guidance recommends discontinuing GLP-1s at least 2 months before conception. Restoration of ovulation may occur with weight loss; effective contraception is recommended during therapy if pregnancy is not desired.",
+  },
+  {
+    q: "What labs are needed before starting a GLP-1?",
+    a: "The standard baseline panel includes CBC, comprehensive metabolic panel (renal and hepatic function), lipid panel, HbA1c, and TSH. Some programs additionally request fasting insulin or hs-CRP. Labs are typically included in the program cost at reputable providers, with follow-up panels at 12 and 26 weeks.",
+  },
+  {
+    q: "Do compounded GLP-1s have the same side effects as brand-name?",
+    a: "Compounded preparations containing semaglutide or tirzepatide share the same active pharmaceutical ingredient as the brand-name products and broadly produce similar side-effect profiles — predominantly gastrointestinal (nausea, diarrhea, vomiting, constipation) during dose escalation. Quality variability across compounding pharmacies can affect the experience; pharmacy disclosure and certificate-of-analysis availability are the practical signals.",
+  },
 ];

@@ -39,6 +39,27 @@ export const TEAM: Member[] = [
     bio: "Edits GLP Review for clarity, sourcing, and corrections. Maintains the public corrections log and oversees the editorial-independence firewall.",
     knowsAbout: ["Health journalism", "Editorial standards", "Fact-checking"],
   },
+  {
+    id: "ravi-shankar",
+    name: "Ravi Shankar",
+    role: "Fact-checker",
+    credentials: "M.P.H., Epidemiology",
+    bio: "Independent fact-checker for GLP Review. Verifies primary-source claims for clinical, regulatory, and pricing content; maintains source citation standards. Not employed by any provider in the ranking.",
+    knowsAbout: ["Clinical-trial methodology", "Health policy", "Fact-checking"],
+  },
+  {
+    id: "dr-aisha-patel",
+    name: "Aisha Patel, M.D., M.S.",
+    role: "Contributing Clinician",
+    credentials: "M.D., Internal Medicine; M.S. Clinical Epidemiology",
+    bio: "Practicing internist and contributing reviewer on the clinical desk. Reviews drug-page content and condition-specific guidance. Reviews are advisory and do not influence ranking placement; clinical practice is unaffiliated with any reviewed provider.",
+    knowsAbout: [
+      "Internal medicine",
+      "Obesity medicine",
+      "Diabetes care",
+      "Clinical epidemiology",
+    ],
+  },
 ];
 
 export const EDITORIAL = {
